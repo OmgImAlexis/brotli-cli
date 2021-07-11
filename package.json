@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts,.tsx,.js,.jsx,.mjs",
     "lint:fix": "npm run lint --fix",
-    "prepack": "npm run compile",
+    "prepare": "npm run compile",
     "prepublishOnly": "npm audit && npm run lint && npm run test && npm run docs",
     "start:dev": "nodemon",
     "start:dev:compatibility": "TS_NODE_FILES=true npm run start:dev"
